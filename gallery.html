@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TapnHome Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+   /* Reset and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-item .overlay-content {
+    color: #fff;
+    text-align: center;
+}
+
+/* Other Styles */
+/* Add any additional styles here */
+
+</style>
+</head>
+<body>
+
+     
+
+   <!-- Topbar Start -->
+   <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+       <div class="container">
+           <div class="d-flex justify-content-between topbar">
+               <div class="top-info">
+                   <small class="me-3 text-white-50"><a href="#"><i
+                               class="fas fa-map-marker-alt me-2 text-secondary"></i></a> Sahajanand chowk near central
+                       bank, India</small>
+                   <small class="me-3 text-white-50"><a href="#"><i
+                               class="fas fa-envelope me-2 text-secondary"></i></a>info@tapnhomeservice.com</small>
+               </div>
+               <div id="note" class="text-secondary d-none d-xl-flex"><small>StartUp India (DIPPI44429)
+                       </small></div>
+               <div class="top-link">
+                   <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                           class="fab fa-facebook-f text-primary"></i></a>
+                   <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                           class="fab fa-twitter text-primary"></i></a>
+                   <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                           class="fab fa-instagram text-primary"></i></a>
+                   <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i
+                           class="fab fa-linkedin-in text-primary"></i></a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- Topbar End -->
+
+   <!-- Navbar Start -->
+   <div class="container-fluid bg-primary">
+       <div class="container">
+           <nav class="navbar navbar-dark navbar-expand-lg py-0">
+               <!-- <a href="index.html" class="navbar-brand">
+                      
+                       <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1>
+                   </a> -->
+
+               <a href="index.html" class="navbar-brand">
+                   <img src="img/tapn.jpeg" alt="" class="img-fluid"
+                       style="max-height: 50px; max-width: 180px; border-radius: 10px;">
+               </a>
+
+               <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                   data-bs-target="#navbarCollapse">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                   <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                       <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
+                       <a href="about.html" class="nav-item nav-link">About</a>
+                       <!-- <a href="service.html" class="nav-item nav-link">Services</a>
+                       <a href="project.html" class="nav-item nav-link">Projects</a> -->
+                       <div class="nav-item dropdown">
+                           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                           <div class="dropdown-menu rounded">
+                               <a href="./tapnhome/itweto" class="dropdown-item" target="_blank">ITweto</a>
+                               <a href="./tapnhome/handys" class="dropdown-item" target="_blank">Handys Company</a>
+                               <a href="tapnhome/solorpump/" class="dropdown-item" target="_blank">Solar Ngo</a>
+                               <a href="tapnhome/marriage/givehope-master/" class="dropdown-item" target="_blank">Marriage Ngo</a>
+
+                           </div>
+                       </div>
+                       <a href="contact.html" class="nav-item nav-link">Contact</a>
+                   </div>
+               </div>
+               <div class="d-none d-xl-flex flex-shirink-0">
+                   <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                       <a href="" class="position-relative animated tada infinite">
+                           <i class="fa fa-phone-alt text-white fa-2x"></i>
+                           <div class="position-absolute" style="top: -7px; left: 20px;">
+                               <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                           </div>
+                       </a>
+                   </div>
+                   <div class="d-flex flex-column pe-4 border-end">
+                       <span class="text-white-50">Have any questions?</span>
+                       <span class="text-secondary">Call: +91 651 351 2148</span>
+                   </div>
+                   <div class="d-flex align-items-center justify-content-center ms-4 ">
+                       <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                   </div>
+               </div>
+           </nav>
+       </div>
+   </div>
+   <!-- Navbar End -->
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="img/gallery.jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+               
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/gallery1 (1).jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+              
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/gallery1 (2).jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+                
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/gallery1 (3).jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+                
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/gallery1 (4).jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+                
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/gallery1 (5).jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+                
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/gallery1 (6).jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+              
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/gallery1 (5).jpeg" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+              
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/300" alt="">
+        <div class="overlay">
+            <div class="overlay-content">
+               
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/300" alt="Image 2">
+        <div class="overlay">
+            <div class="overlay-content">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
